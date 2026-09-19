@@ -1,0 +1,23 @@
+Query by Example in EBS
+
+1. Login to EBS using the admin user:
+   Username: OPERATIONS
+
+2. Go to:
+   System Administrator
+   -> Security
+   -> User
+   -> Define
+
+3. Click:
+   View -> Query By Example -> Enter
+
+4. Enter a search value, for example:
+   OPERATIONS
+   or
+   %O
+
+5. Click:
+   View -> Query By Example -> Run
+
+6. The matching user records will be displayed.
