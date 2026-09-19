@@ -1,0 +1,22 @@
+Place .fmx File in EBS
+
+1. Open WinSCP.
+
+2. Login using:
+   Host Name: EBS.EXAMPLE.COM
+   Username: root
+   Password: ----
+
+3. On the left side (Local):
+   - Go to the folder where the Oracle Form files are saved.
+   - Select the compiled .fmx file.
+   Example:
+   SafaMasterDetailForm.fmx
+
+4. On the right side (EBS Server):
+   Navigate to:
+   /u01/install/VISION/fs1/EBSapps/appl/fnd/12.0.0/forms/US
+
+5. Copy the .fmx file from the local side to the EBS Server side.
+
+6. Verify that the .fmx file appears in the server directory.
