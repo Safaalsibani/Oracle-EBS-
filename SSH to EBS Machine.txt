@@ -1,0 +1,22 @@
+SSH to EBS Machine
+
+1. Open PuTTY.
+
+2. Connect to:
+   Host: EBS.EXAMPLE.COM
+
+3. Login using:
+   Username: root
+   Password: ----
+
+4. Check the current directory:
+   pwd
+
+5. Navigate to the Oracle Forms directory:
+   cd /u01/install/VISION/fs1/EBSapps/appl/fnd/12.0.0/forms/US
+
+6. Check the current directory again:
+   pwd
+
+7. List the .fmx files:
+   ls *.fmx
