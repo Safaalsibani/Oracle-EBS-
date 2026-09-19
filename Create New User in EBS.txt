@@ -1,0 +1,30 @@
+Create New User in EBS
+
+1. Login to EBS using the admin user:
+   Username: OPERATIONS
+
+2. Go to:
+   System Administrator
+   -> Security
+   -> User
+   -> Define
+
+3. Create a new user:
+   Username: SAFA
+
+4. Enter the password for the new user.
+
+5. Add Responsibilities:
+   - Application Developer
+   - System Administrator
+
+6. Click:
+   Help -> Record History
+
+7. User Table:
+   FND_USER
+
+8. Responsibility Table:
+   FND_USER_RESP_GROUPS_DIRECT
+
+9. Save the changes.
