@@ -1,0 +1,59 @@
+Create Procedure and Function Using SQLPlus
+
+FUNCTION:
+
+CREATE OR REPLACE FUNCTION SAFA_FN_TEST
+RETURN VARCHAR2 IS
+
+    V_MSG VARCHAR2(2000);
+
+BEGIN
+
+    V_MSG := 'WELCOME TO ORACLE';
+    RETURN V_MSG;
+
+END;
+/
+
+Call the Function:
+
+SELECT SAFA_FN_TEST FROM DUAL;
+
+
+PROCEDURE:
+
+CREATE OR REPLACE PROCEDURE SAFA_PR_TEST IS
+
+BEGIN
+
+    DBMS_OUTPUT.PUT_LINE('WELCOME TO ORACLE EBS PROCEDURE');
+
+END;
+/
+
+Call the Procedure:
+
+SET SERVEROUTPUT ON;
+
+EXEC SAFA_PR_TEST;
+
+
+Call Function and Procedure in PL/SQL Block:
+
+DECLARE
+
+    X VARCHAR2(2000);
+
+BEGIN
+
+    SAFA_PR_TEST;
+    X := SAFA_FN_TEST;
+    DBMS_OUTPUT.PUT_LINE(X);
+
+END;
+/
+
+
+If there is an error:
+
+SHOW ERR;
