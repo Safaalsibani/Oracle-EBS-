@@ -1,0 +1,51 @@
+Create Canvas and Data Block in Form Builder
+
+1. Open Oracle Forms Builder.
+
+2. Create a new Form Module.
+
+3. Connect to the database:
+   Username: APPS
+   Password: ----
+   Host String: EBSDB
+
+4. Create a new Canvas:
+   - Click Canvas.
+   - Click "+" to create a new canvas.
+   - Right click the new canvas.
+   - Choose Property Palette.
+   - Change the canvas name to:
+     CAN_EMP
+   - Press Enter to save.
+
+5. Create a new Data Block:
+   - Click Data Block.
+   - Click "+" to create a new data block.
+   - Use the Data Block Wizard.
+
+6. In the wizard:
+   - Choose Table/View.
+   - Enter table name:
+     EMP
+   - Press Tab.
+   - Select the required columns.
+   - Click ">>".
+   - Continue with Next.
+
+7. Choose Layout Design.
+
+8. Select the canvas:
+   CAN_EMP
+
+9. Select the items and click ">>".
+
+10. Choose:
+    Tabular
+
+11. Enter the Form Title:
+    EMP DETAILS
+
+12. Set:
+    Records Displayed = 5
+
+13. Click Next, then Finish.
