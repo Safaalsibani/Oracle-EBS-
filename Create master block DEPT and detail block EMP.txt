@@ -1,0 +1,70 @@
+Create Master Block "DEPT" and Detail Block "EMP"
+
+1. Open Oracle Forms Builder.
+
+2. Create a new Form Module.
+
+3. Connect to the database:
+   Username: APPS
+   Password: ----
+   Host String: EBSDB
+
+4. Create a new Canvas:
+   - Click Canvas.
+   - Click "+" to create a new canvas.
+   - Open Property Palette.
+   - Change the canvas name to:
+     CAN_EMP_DEPT
+
+5. Create the Master Data Block:
+   - Click Data Block.
+   - Click "+".
+   - Use Data Block Wizard.
+   - Choose Table/View.
+   - Enter table name:
+     DEPT
+   - Select all required columns.
+   - Choose Layout Design.
+   - Select the canvas:
+     CAN_EMP_DEPT
+   - Choose Tabular.
+   - Form Title:
+     DEPARTMENT DETAILS
+   - Records Displayed:
+     5
+   - Finish.
+
+6. Create the Detail Data Block:
+   - Click Data Block.
+   - Click "+".
+   - Use Data Block Wizard.
+   - Choose Table/View.
+   - Enter table name:
+     EMP
+   - Select all required columns.
+
+7. Create the Master-Detail Relationship:
+   - Select Remove Auto Join.
+   - Click Create Relationship.
+   - Master Block: DEPT
+   - Master Item: DEPTNO
+   - Detail Item: DEPTNO
+   - Join:
+     EMP.DEPTNO = DEPT.DEPTNO
+
+8. Continue the wizard:
+   - Choose Tabular.
+   - Form Title:
+     EMPLOYEE DETAILS
+   - Records Displayed:
+     5
+   - Finish.
+
+9. Oracle automatically creates triggers and program units
+   for the Master-Detail relationship.
+
+10. Save the form as:
+    SafaMasterDetailForm.fmb
+
+11. Compile the form to create:
+    SafaMasterDetailForm.fmx
